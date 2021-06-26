@@ -1,4 +1,4 @@
-# Simple Paint in SDL
+# Simple Paint in SDL with nice effect
 
 ## Key Bindings
 
