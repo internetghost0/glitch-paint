@@ -73,7 +73,7 @@ int main(int argc, char** argv) {
     SDL_Point points[MAX_LINES] = {0};
     int count = 0;
     count = load_lines_from_file("./maps/save0.bin", points, MAX_LINES);
-    SDL_Delay(1000);
+    // SDL_Delay(1000);
     bool glitch_mode = true;
     while (running) {
         SDL_SetRenderDrawColor(renderer, HEX_COLOR(background_color));
