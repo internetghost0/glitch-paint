@@ -2,13 +2,9 @@
 #include <iostream>
 #include <fstream>
 
-
-
-
-
 #define RED 0xFF0000FF
 #define GREEN 0x00FF00FF
-#define BLUE 0X0000FFFF
+#define BLUE 0x0000FFFF
 #define BLACK 0x000000FF
 #define WHITE 0xFFFFFFFF
 
