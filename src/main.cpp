@@ -51,6 +51,7 @@ int main(int argc, char** argv) {
         std::cout << argv[0] << " width height\n";
     }
 
+    const char* map_path = "./maps/save0.bin";
 
     sdl_check(SDL_Init(SDL_INIT_EVERYTHING));
 
@@ -68,7 +69,7 @@ int main(int argc, char** argv) {
     
     SDL_Point points[MAX_LINES] = {0};
     int count = 0;
-    count = load_lines_from_file("./maps/save0.bin", points, MAX_LINES);
+    count = load_lines_from_file(map_path, points, MAX_LINES);
     // SDL_Delay(1000);
     bool glitch_mode = true;
     while (running) {
@@ -126,10 +127,10 @@ int main(int argc, char** argv) {
                     std::cout << "finished." << std::endl;
                 }break;
                 case SDLK_F5: {
-                    dump_lines_to_file("./maps/save0.bin", points, count);
+                    dump_lines_to_file(map_path, points, count);
                 }break;
                 case SDLK_F9: {
-                    count = load_lines_from_file("./maps/save0.bin", points, MAX_LINES);
+                    count = load_lines_from_file(map_path, points, MAX_LINES);
                     SDL_Delay(1000);
                 }break;
                 case SDLK_q:
